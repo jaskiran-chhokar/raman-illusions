@@ -15,8 +15,17 @@ p, span, button, a {
     align-content: center;
     height: 100vh; 
 }
+.video-background {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    min-width: 100%; 
+    min-height: 100%; 
+    z-index: -1; 
+}
 .promo {
-    padding: 5rem; 
+    padding: 0 5rem;
+
     h1 {
         font-size: 7rem;
         letter-spacing: -0.5rem;

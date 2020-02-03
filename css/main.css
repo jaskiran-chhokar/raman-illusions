@@ -24,8 +24,17 @@ p, span, button, a {
   height: 100vh;
 }
 
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
 .promo {
-  padding: 5rem;
+  padding: 0 5rem;
 }
 
 .promo h1 {
