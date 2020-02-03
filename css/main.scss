@@ -70,9 +70,14 @@ p, span, button, a {
         color: rgba(255,255,255,0.7);
         margin-bottom: 2rem;
     }
-    .fa-angle-down {
+    .fas {
         font-size: 1rem;
         margin-left: 0.5rem; 
+    }
+    .fa-angle-down {
         color: black; 
+    }
+    .fa-angle-right {
+        color: rgba(255,255,255,0.7);
     }
 }

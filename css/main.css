@@ -92,9 +92,16 @@ p, span, button, a {
   margin-bottom: 2rem;
 }
 
-.promo .fa-angle-down {
+.promo .fas {
   font-size: 1rem;
   margin-left: 0.5rem;
+}
+
+.promo .fa-angle-down {
   color: black;
+}
+
+.promo .fa-angle-right {
+  color: rgba(255, 255, 255, 0.7);
 }
 /*# sourceMappingURL=main.css.map */
