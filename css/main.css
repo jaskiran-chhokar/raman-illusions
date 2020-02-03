@@ -14,14 +14,35 @@ p, span, button, a {
 }
 
 .container {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-button {
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 30px;
+}
+
+.secondary-button {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 1em 2em;
+  margin-left: 1rem;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .video-background {
@@ -42,10 +63,18 @@ p, span, button, a {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.84);
 }
 
 .promo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh;
   padding: 0 5rem;
 }
 
@@ -59,6 +88,13 @@ p, span, button, a {
 .promo p {
   font-size: 2.7rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+.promo .fa-angle-down {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
