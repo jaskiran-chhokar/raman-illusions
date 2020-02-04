@@ -161,11 +161,6 @@ p, span, button, a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.about-curve {
-  border: 2px solid #02132a;
-  border-bottom-left-radius: 25%;
-}
-
 .about-cta {
   display: -ms-grid;
   display: grid;
@@ -178,9 +173,6 @@ p, span, button, a {
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(35%, #fbf9f3), to(rgba(249, 231, 208, 0.7)));
   background-image: linear-gradient(180deg, white 0%, #fbf9f3 35%, rgba(249, 231, 208, 0.7) 100%);
   padding: 0 5rem;
-  border: 2px solid #02132a;
-  border-bottom-left-radius: 25%;
-  margin: 2em;
 }
 
 .about-cta p {
@@ -188,7 +180,7 @@ p, span, button, a {
   font-weight: 300;
   color: #02132a;
   margin-bottom: 3rem;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .about-cta .fas {
@@ -200,7 +192,6 @@ p, span, button, a {
 .about-cta img {
   width: 90%;
   height: auto;
-  border-bottom-left-radius: 25%;
 }
 
 /* gallery section */
