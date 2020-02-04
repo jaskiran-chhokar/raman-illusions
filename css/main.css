@@ -44,10 +44,19 @@ p, span, button, a {
   border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
+.secondary-button-two {
+  color: #02132a;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 30px;
+  border: 1px solid #02132a;
+}
+
 .main-heading {
-  color: white;
+  color: #02132a;
   font-size: 4rem;
-  letter-spacing: -0.35rem;
+  line-height: 1;
   margin-bottom: 1rem;
 }
 
@@ -163,19 +172,21 @@ p, span, button, a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
   height: 100vh;
-  background-color: #02132a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(35%, #fbf9f3), to(rgba(249, 231, 208, 0.7)));
+  background-image: linear-gradient(180deg, white 0%, #fbf9f3 35%, rgba(249, 231, 208, 0.7) 100%);
   padding: 0 5rem;
+  border: 2px solid #02132a;
   border-bottom-left-radius: 25%;
-  margin-bottom: 2rem;
+  margin: 2em;
 }
 
 .about-cta p {
   font-size: 1.2rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
+  color: #02132a;
   margin-bottom: 3rem;
   line-height: 1.5;
 }
@@ -183,16 +194,16 @@ p, span, button, a {
 .about-cta .fas {
   font-size: 1rem;
   margin-left: 0.5rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: #02132a;
 }
 
 .about-cta img {
-  width: 85%;
+  width: 90%;
   height: auto;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 25%;
 }
 
+/* gallery section */
 .gallery {
   height: 100vh;
 }
