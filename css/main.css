@@ -58,6 +58,7 @@ p, span, button, a {
   font-size: 4rem;
   line-height: 1;
   margin-bottom: 1rem;
+  letter-spacing: -0.03rem;
 }
 
 /* navbar */
@@ -170,15 +171,25 @@ p, span, button, a {
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(35%, #fbf9f3), to(rgba(249, 231, 208, 0.7)));
-  background-image: linear-gradient(180deg, white 0%, #fbf9f3 35%, rgba(249, 231, 208, 0.7) 100%);
-  padding: 0 5rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(17, 17, 17, 0.98)), to(#111111)), url(https://images.pexels.com/photos/1204649/pexels-photo-1204649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(to top, rgba(17, 17, 17, 0.98) 0%, #111111 100%), url(https://images.pexels.com/photos/1204649/pexels-photo-1204649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  padding: 0 5rem 0 0;
 }
 
-.about-cta p {
+.about-cta .main-heading {
+  color: #f1f1f1;
+}
+
+.about-cta .about-underline {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.about-cta .about-para {
   font-size: 1.2rem;
   font-weight: 300;
-  color: #02132a;
+  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 3rem;
   line-height: 2;
 }
@@ -186,7 +197,7 @@ p, span, button, a {
 .about-cta .fas {
   font-size: 1rem;
   margin-left: 0.5rem;
-  color: #02132a;
+  color: white;
 }
 
 .about-cta img {
