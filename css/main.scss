@@ -37,6 +37,32 @@ p, span, button, a {
     letter-spacing: -0.35rem;
     margin-bottom: 1rem; 
 }
+/* navbar */ 
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 5rem;
+}
+.logo-container {
+    p {
+        color: white; 
+    }
+}
+.navbar-container {
+    display: grid; 
+    justify-content: end;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: right; 
+    list-style-type: none;
+
+    .nav-link {
+        color: white; 
+        cursor: pointer; 
+    }
+}
 .video-background {
     object-fit: cover;
     position: absolute;
@@ -90,7 +116,10 @@ p, span, button, a {
         color: rgba(255,255,255,0.7);
     }
 }
-
+.about-curve {
+    border: 2px solid rgb(2,19,42);
+    border-bottom-left-radius: 25%;
+}
 .about-cta {
     display: grid; 
     align-items: center;
@@ -98,6 +127,8 @@ p, span, button, a {
     height: 100vh;
     background-color:  #02132a;
     padding: 0 5rem; 
+    border-bottom-left-radius: 25%;
+    margin-bottom: 2rem;
 
     p {
         font-size: 1.2rem;
@@ -121,5 +152,4 @@ p, span, button, a {
 
 .gallery {
     height: 100vh; 
-    background-color: rgb(249,231,208);
 }
