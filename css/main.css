@@ -55,10 +55,10 @@ p, span, button, a {
 
 .main-heading {
   color: #02132a;
-  font-size: 4rem;
+  font-size: 5.5rem;
   line-height: 1;
-  margin-bottom: 1rem;
-  letter-spacing: -0.03rem;
+  margin-bottom: 1.4rem;
+  letter-spacing: -0.25rem;
 }
 
 /* navbar */
@@ -160,48 +160,6 @@ p, span, button, a {
 
 .promo .fa-angle-right {
   color: rgba(255, 255, 255, 0.7);
-}
-
-.about-cta {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  height: 100vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(17, 17, 17, 0.98)), to(#111111)), url(https://images.pexels.com/photos/1204649/pexels-photo-1204649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background: linear-gradient(to top, rgba(17, 17, 17, 0.98) 0%, #111111 100%), url(https://images.pexels.com/photos/1204649/pexels-photo-1204649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  padding: 0 5rem 0 0;
-}
-
-.about-cta .main-heading {
-  color: #f1f1f1;
-}
-
-.about-cta .about-underline {
-  margin-bottom: 1rem;
-  width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-}
-
-.about-cta .about-para {
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 3rem;
-  line-height: 2;
-}
-
-.about-cta .fas {
-  font-size: 1rem;
-  margin-left: 0.5rem;
-}
-
-.about-cta img {
-  width: 90%;
-  height: auto;
 }
 
 /* gallery section */
