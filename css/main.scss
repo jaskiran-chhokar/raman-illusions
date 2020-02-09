@@ -325,9 +325,12 @@ p, span, button, a, small {
         transform: rotate(6deg);
     }
 }
-/* gallery section */ 
-.gallery {
-    height: 100vh; 
+/* featured work */ 
+.featured-work {
+    display: grid; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
 }
 
 /* footer */ 
