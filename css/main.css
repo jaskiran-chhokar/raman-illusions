@@ -468,7 +468,7 @@ p, span, button, a, small {
 }
 
 .featured-work-button {
-  padding: 5rem 5rem 10rem 5rem;
+  padding: 8rem 5rem 10rem 5rem;
   text-align: center;
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
