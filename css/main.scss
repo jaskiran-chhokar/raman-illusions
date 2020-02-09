@@ -76,7 +76,7 @@ p, span, button, a, small {
 /* navbar */ 
 .navbar-section {
     position: relative; 
-    z-index: 5; 
+    z-index: 10; 
 }
 .navbar {
     position: fixed;
@@ -85,6 +85,7 @@ p, span, button, a, small {
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem 5rem;
+    transition: 0.5s ease-in-out;
 }
 .logo-container {
     p {
