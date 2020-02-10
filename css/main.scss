@@ -28,6 +28,10 @@ p, span, button, a, small {
     text-decoration: none; 
     padding: 1em 2em; 
     border-radius: 30px; 
+
+    .fas {
+        margin-left: 0.5rem; 
+    }
 }
 .secondary-button {
     color: rgba(255,255,255,0.7);
@@ -36,6 +40,10 @@ p, span, button, a, small {
     padding: 1em 2em; 
     border-radius: 30px; 
     border: 1px solid rgba(255,255,255,0.7); 
+
+    .fas {
+        margin-left: 0.5rem; 
+    }
 }
 .secondary-button-two {
     color: #02132a;
@@ -45,9 +53,15 @@ p, span, button, a, small {
     border-radius: 30px; 
     border: 1px solid #02132a; 
 
-    i {
+    .fas {
         margin-left: 0.5rem; 
     }
+}
+.page-heading {
+    color: white; 
+    font-size: 6rem; 
+    margin-bottom: 0rem; 
+    letter-spacing: -0.3rem;
 }
 .main-heading {
     color: #02132a;
@@ -63,11 +77,14 @@ p, span, button, a, small {
     letter-spacing: -0.3rem;
     font-weight: 400;    
 }
-.main-subheading {
+.main-subheading, .main-subheading-light {
     line-height: 2;
     margin-bottom: 3rem;
     font-weight: 300;
     font-size: 1.2rem;
+}
+.main-subheading-light {
+    color: rgba(255,255,255,0.7);
 }
 .highlight-background {
     background-color: $highlight-background; 
@@ -101,6 +118,7 @@ p, span, button, a, small {
 
     .nav-link {
         color: white; 
+        text-decoration: none; 
         cursor: pointer; 
     }
 }
@@ -153,7 +171,6 @@ p, span, button, a, small {
     }  
     .fas {
         font-size: 1rem;
-        margin-left: 0.5rem; 
     }
     .fa-angle-down {
         color: black; 
@@ -367,6 +384,44 @@ p, span, button, a, small {
     padding: 8rem 5rem 10rem 5rem; 
     text-align:center; 
     transform: skewY(-5deg);
+}
+/* contact page */ 
+.contact-header {
+    position: relative;
+    background-image: url(https://scontent.fykz1-2.fna.fbcdn.net/v/t31.0-8/10504992_692628334138473_4946517905191679953_o.jpg?_nc_cat=104&_nc_ohc=o2x4rqwbSVAAX_FTbm5&_nc_ht=scontent.fykz1-2.fna&oh=b4cbc15892bf20db36e6e0a109b5c5aa&oe=5EBB1558);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 70vh;
+}
+.contact-header::after {
+    content:''; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0,0,0,0.75);
+}
+.contact-container {
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 5rem; 
+
+    .page-heading, .main-subheading-light, .main-button {
+        position: relative;
+        z-index: 2;         
+    }  
+
+}
+.contact-form {
+    padding: 8rem 5rem; 
+
+    .full-name, .email-address, .phone-number, .subject, .message {
+        display: block; 
+        margin-bottom: 1rem; 
+    }
 }
 /* footer */ 
 footer {
