@@ -1,5 +1,5 @@
 $highlight-background: rgba(100, 188, 205, 0.1); 
-$lighbeige-background: rgb(252,243,231); 
+$lightbeige-background: rgb(252,243,231); 
 
 @mixin grid-layout {
     display: grid; 
@@ -13,7 +13,7 @@ $lighbeige-background: rgb(252,243,231);
     padding: 0; 
 }
 body {
-    background-color: $lighbeige-background; 
+    background-color: $lightbeige-background; 
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Nunito Sans', sans-serif;
@@ -104,8 +104,7 @@ p, span, button, a, small {
 .navbar {
     position: fixed;
     width: 100%;
-    display: grid; 
-    justify-content: center;
+    @include grid-layout; 
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem 5rem;
     transition: 0.5s ease-in-out;
@@ -208,7 +207,7 @@ p, span, button, a, small {
         align-items: center;
         width: 46%;
         height: 105%;
-        background-color: $lighbeige-background;
+        background-color: $lightbeige-background;
         transform: rotate(6deg) translateX(-50px) translateY(30px);
         position: relative;
         z-index: 1;
@@ -269,7 +268,7 @@ p, span, button, a, small {
 }
 
 .shows-content {
-    background-color: $lighbeige-background; 
+    background-color: $lightbeige-background; 
     padding: 5rem 4rem;
     z-index: 3;
     height: 100%;
@@ -282,16 +281,13 @@ p, span, button, a, small {
     z-index: 2; 
 }
 .shows-container-one {
-    display: grid; 
-    align-items: center; 
-    justify-content: center; 
+    @include grid-layout; 
     padding: 8rem 5rem 5rem 5rem;
     text-align: center; 
 }
 
 .shows-container-two {
-    display: grid; 
-    align-items: center; 
+    @include grid-layout; 
     grid-template-columns: repeat(2, 1fr);
     padding: 0 5rem; 
     position: relative;
@@ -325,8 +321,7 @@ p, span, button, a, small {
 
 }
 .shows-container-three {
-    display: grid; 
-    align-items: center; 
+    @include grid-layout; 
     grid-template-columns: repeat(2, 1fr);
     padding: 0 5rem; 
     height: 70vh;
@@ -343,8 +338,7 @@ p, span, button, a, small {
     }
 }
 .shows-container-four {
-    display: grid; 
-    align-items: center; 
+    @include grid-layout; 
     grid-template-columns: repeat(2, 1fr);
     padding: 0 5rem; 
     height: 70vh;    
@@ -365,18 +359,14 @@ p, span, button, a, small {
     transform: skewY(5deg);
 }
 .featured-work-title {
-    display: grid; 
-    justify-content: center; 
-    align-items: center; 
+    @include grid-layout; 
     grid-template-columns: 50%; 
     text-align: center; 
     padding: 8rem 5rem 5rem 5rem; 
     transform: skewY(-5deg);
 }
 .featured-work {
-    display: grid; 
-    justify-content: center;
-    align-items: center; 
+    @include grid-layout; 
     grid-template-columns: repeat(3, 1fr);
     padding: 0 5rem; 
     grid-gap: 1.5rem; 
@@ -435,8 +425,7 @@ footer {
 }
 
 .footer-container {
-    display: grid; 
-    justify-content: center;
+    @include grid-layout; 
     grid-template-columns: repeat(3, 1fr); 
 
     .footer-about, .footer-pages, .footer-contact {
