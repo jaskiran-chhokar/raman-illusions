@@ -1,6 +1,12 @@
 $highlight-background: rgba(100, 188, 205, 0.1); 
 $lighbeige-background: rgb(252,243,231); 
 
+@mixin grid-layout {
+    display: grid; 
+    justify-content: center;
+    align-items: center; 
+}
+
 * {
     box-sizing: border-box;
     margin: 0; 
