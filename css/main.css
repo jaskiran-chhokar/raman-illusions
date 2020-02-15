@@ -36,7 +36,6 @@ p, span, button, a, small {
   text-align: center;
   text-decoration: none;
   padding: 1em 2em;
-  border-radius: 30px;
 }
 
 .main-button .fas {
@@ -48,7 +47,6 @@ p, span, button, a, small {
   font-size: 1rem;
   text-decoration: none;
   padding: 1em 2em;
-  border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
@@ -61,7 +59,6 @@ p, span, button, a, small {
   font-size: 1rem;
   text-decoration: none;
   padding: 1em 2em;
-  border-radius: 30px;
   border: 1px solid #02132a;
 }
 
@@ -455,7 +452,7 @@ p, span, button, a, small {
 
 /* featured work */
 .featured-work-section {
-  background-color: rgba(186, 206, 230, 0.4);
+  background-color: rgba(209, 210, 227, 0.4);
   position: relative;
   z-index: 5;
   -webkit-transform: skewY(5deg);
@@ -491,7 +488,7 @@ p, span, button, a, small {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   padding: 0 5rem;
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
 }
