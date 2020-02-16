@@ -48,17 +48,41 @@
     </section>
     <!-- contact form -->
     <section class="contact-form">
-        <form>
-            <label>Full Name:</label>
-            <input class="full-name" type="text">
-            <label>Email Address: </label>
-            <input class="email-address" type="email">
-            <label>Phone Number:</label>
-            <input class="phone-number" type="number" >
-            <label>Subject: </label>
-            <input class="subject" type="text">
-            <label>Message: </label>
-            <input class="message" type="textbox">
+        <div class="contact-info">
+            <form>
+                <div class="container">
+                    <div class="form-contain-one">
+                        <label class="form-label">First Name:</label>
+                        <input class="first-name" type="text">
+                    </div>
+                    <div class="form-contain-two">
+                        <label class="form-label">Last Name:</label>
+                        <input class="last-name" type="text">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="form-contain-one">
+                        <label class="form-label">Email Address: </label>
+                        <input class="email-address" type="email">
+                    </div>
+                    <div class="form-contain-two">
+                        <label class="form-label">Phone Number:</label>
+                        <input class="phone-number" type="number" >
+                    </div>
+                </div>
+                <label class="form-label">Message: </label>
+                <textarea class="message" type="textbox" rows="8" cols="50"></textarea>
+                <button class="secondary-button-two" type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-image"></div>
+    </section>
+    <section class="contact-map">
+            <h2 class="main-heading">My Travels . . .</h2>
+            <div class="contact-map-contain">
+                    <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1x5-FWpWpZnC5Mr5ml2ROH7cv-ysj8hni" width="640" height="480"></iframe>
+                    <div class="map-overlay"></div>
+            </div>
     </section>
     <!-- footer -->
     <footer>
