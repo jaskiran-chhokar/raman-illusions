@@ -37,6 +37,8 @@ p, span, button, a, small {
   text-align: center;
   text-decoration: none;
   padding: 1em 2em;
+  position: relative;
+  z-index: 1;
 }
 
 .main-button .fas {
@@ -44,27 +46,94 @@ p, span, button, a, small {
 }
 
 .secondary-button {
+  background-color: transparent;
   color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
   text-decoration: none;
   padding: 1em 2em;
   border: 1px solid rgba(255, 255, 255, 0.7);
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .secondary-button .fas {
   margin-left: 0.5rem;
+  z-index: 1;
+}
+
+.secondary-button:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: #02132a !important;
+  -webkit-transition: .25s ease-in;
+  transition: .25s ease-in;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  opacity: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.secondary-button:hover:after {
+  color: #02132a !important;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
+}
+
+.secondary-button:hover {
+  color: #02132a !important;
 }
 
 .secondary-button-two {
   color: #02132a;
+  border: 1px solid #02132a;
   font-size: 1rem;
   text-decoration: none;
   padding: 1em 2em;
-  border: 1px solid #02132a;
+  position: relative;
+  z-index: 1;
 }
 
 .secondary-button-two .fas {
   margin-left: 0.5rem;
+}
+
+.secondary-button-two:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #02132a;
+  color: #02132a !important;
+  -webkit-transition: .25s ease-in;
+  transition: .25s ease-in;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  opacity: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.secondary-button-two:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
+}
+
+.secondary-button-two:hover {
+  color: white !important;
 }
 
 .page-heading {
@@ -221,10 +290,6 @@ p, span, button, a, small {
 
 .promo .fa-angle-down {
   color: black;
-}
-
-.promo .fa-angle-right {
-  color: rgba(255, 255, 255, 0.7);
 }
 
 /* about section */
@@ -493,7 +558,7 @@ p, span, button, a, small {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   padding: 0 5rem;
-  grid-gap: 2rem;
+  grid-gap: 1.5rem;
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
 }
