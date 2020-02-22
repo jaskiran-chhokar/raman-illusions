@@ -179,6 +179,11 @@ p, span, button, a, small {
   color: #02132a;
 }
 
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
 /* navbar */
 .navbar-section {
   position: relative;
@@ -700,6 +705,85 @@ p, span, button, a, small {
   left: 0;
   width: 100%;
   height: 10%;
+}
+
+/* about page */
+.about-header {
+  position: relative;
+  background-image: url(https://images.unsplash.com/photo-1528136486997-bc538ef130d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+}
+
+.about-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.about-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5rem;
+}
+
+.about-container .page-heading, .about-container .main-subheading-light, .about-container .main-button {
+  position: relative;
+  z-index: 2;
+}
+
+.gallery-container {
+  padding: 8rem 0.1rem;
+}
+
+.gallery-container .gallery-header {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.gallery-container .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery-container .gallery .gallery-column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  margin: 0.1rem;
+}
+
+/* responsive styles for gallery */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    -webkit-box-flex: 40% !important;
+        -ms-flex: 40% !important;
+            flex: 40% !important;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    -webkit-box-flex: 100% !important;
+        -ms-flex: 100% !important;
+            flex: 100% !important;
+    max-width: 100%;
+  }
 }
 
 /* footer */
