@@ -184,6 +184,32 @@ p, span, button, a, small {
   height: auto;
 }
 
+.position-relative {
+  position: relative;
+}
+
+.skew-right {
+  background-color: #fcf3e7;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 15%;
+  height: 120%;
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+}
+
+.skew-left {
+  background-color: #fcf3e7;
+  position: absolute;
+  top: -10%;
+  left: 90%;
+  width: 15%;
+  height: 120%;
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+
 /* navbar */
 .navbar-section {
   position: relative;
@@ -743,8 +769,36 @@ p, span, button, a, small {
   z-index: 2;
 }
 
+.about-info-container {
+  padding: 8rem 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.about-info-container .about-info {
+  position: relative;
+  z-index: 1;
+  padding-right: 1rem;
+}
+
+.about-info-container-two {
+  padding: 0 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.about-info-container-two .about-info {
+  position: relative;
+  z-index: 1;
+  padding-left: 1rem;
+}
+
 .gallery-container {
-  padding: 8rem 0.1rem;
+  padding: 8rem 0.1rem 0;
 }
 
 .gallery-container .gallery-header {
