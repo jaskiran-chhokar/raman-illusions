@@ -107,6 +107,7 @@ a {
   padding: 1em 2em;
   position: relative;
   z-index: 1;
+  height: 100%;
 }
 
 .secondary-button-two .fas {
@@ -939,6 +940,41 @@ a {
 .show-container .page-heading, .show-container .main-subheading-light, .show-container .main-button {
   position: relative;
   z-index: 2;
+}
+
+.show-one-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8rem 5rem 0 5rem;
+}
+
+.show-one {
+  padding: 4rem 5rem 5rem 5rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.show-one .main-subheading {
+  line-height: 2.6 !important;
+  padding-right: 1.3rem;
+  position: relative;
+  z-index: 5;
+}
+
+.show-one .walk-around-video {
+  height: 400px !important;
 }
 
 /* footer */

@@ -99,6 +99,7 @@ a {
     padding: 1em 2em; 
     position: relative; 
     z-index: 1; 
+    height: 100%; 
 
     .fas {
         margin-left: 0.5rem; 
@@ -744,6 +745,29 @@ a {
         position: relative;
         z-index: 2;         
     }  
+}
+.show-one-title {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 5rem 0 5rem;
+}
+.show-one {
+    padding: 4rem 5rem 5rem 5rem; 
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    .main-subheading {
+        line-height: 2.6 !important;
+        padding-right: 1.3rem;
+        position: relative; 
+        z-index: 5; 
+    }
+
+    .walk-around-video {
+        height: 400px !important;
+    }
 }
 /* footer */ 
 footer {
