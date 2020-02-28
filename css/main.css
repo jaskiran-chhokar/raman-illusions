@@ -563,15 +563,19 @@ a {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   padding: 0 5rem;
-  grid-gap: 2rem;
+  grid-gap: 0rem;
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
 }
 
-.featured-work .featured-video-info-one, .featured-work .featured-video-info-two {
-  padding: 1rem 2rem;
+.featured-work .featured-video-info-one {
+  padding: 0.5rem 5rem 2rem 5rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.featured-work .featured-video-info-two {
+  padding: 1rem 5rem 2rem 5rem;
 }
 
 .featured-work .featured-video-info-two .main-heading-small {
