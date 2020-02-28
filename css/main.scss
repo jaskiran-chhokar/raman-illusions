@@ -672,6 +672,47 @@ a {
         max-width: 100%; 
     }
 }
+/* our work page */
+.work-header {
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/163550/landscape-scenic-going-to-the-sun-road-rocky-mountains-163550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 70vh;
+}
+.work-header::after {
+    content:''; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0,0,0,0.75);
+}
+.work-container {
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 5rem; 
+
+    .page-heading, .main-subheading-light, .main-button {
+        position: relative;
+        z-index: 2;         
+    }  
+}
+
+.our-works {
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 8rem 5rem;
+
+    iframe {
+        width: 100%; 
+    }
+}
 /* footer */ 
 footer {
     padding: 10rem 5rem 5rem 5rem; 
