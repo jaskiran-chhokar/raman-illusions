@@ -752,7 +752,7 @@ a {
     align-items: center;
     padding: 8rem 5rem 0 5rem;
 }
-.show-one, .show-two {
+.show-one, .show-two, .show-three {
     padding: 4rem 5rem 5rem 5rem; 
     display: grid; 
     justify-content: center;
@@ -769,6 +769,36 @@ a {
     .walk-around-video {
         height: 400px !important;
     }
+
+    .show-two-image {
+        background-image: url('../assets/crowd-participating-at-event.jpg');
+        height:100%;
+
+        .skew-left {
+            width: 15% !important;
+        }
+    }
+
+    .show-two-info {
+        position: relative; 
+        z-index: 5; 
+        padding-left: 4rem;
+
+        .main-subheading {
+            margin-bottom: 1.2rem !important;
+        }
+    }
+
+    .show-three-image {
+        background-image: url('../assets/dove.jpeg');
+        background-size: cover;
+        height:100%;        
+    }
+}
+.pricing-plan {
+    background-color: rgba(209, 210, 227, 0.4); 
+    transform: skewY(5deg);
+    padding: 8rem 5rem; 
 }
 /* footer */ 
 footer {

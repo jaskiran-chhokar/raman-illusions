@@ -955,7 +955,7 @@ a {
   padding: 8rem 5rem 0 5rem;
 }
 
-.show-one, .show-two {
+.show-one, .show-two, .show-three {
   padding: 4rem 5rem 5rem 5rem;
   display: -ms-grid;
   display: grid;
@@ -969,15 +969,47 @@ a {
       grid-template-columns: repeat(2, 1fr);
 }
 
-.show-one .main-subheading, .show-two .main-subheading {
+.show-one .main-subheading, .show-two .main-subheading, .show-three .main-subheading {
   line-height: 2.2 !important;
   padding-right: 1.3rem;
   position: relative;
   z-index: 5;
 }
 
-.show-one .walk-around-video, .show-two .walk-around-video {
+.show-one .walk-around-video, .show-two .walk-around-video, .show-three .walk-around-video {
   height: 400px !important;
+}
+
+.show-one .show-two-image, .show-two .show-two-image, .show-three .show-two-image {
+  background-image: url("../assets/crowd-participating-at-event.jpg");
+  height: 100%;
+}
+
+.show-one .show-two-image .skew-left, .show-two .show-two-image .skew-left, .show-three .show-two-image .skew-left {
+  width: 15% !important;
+}
+
+.show-one .show-two-info, .show-two .show-two-info, .show-three .show-two-info {
+  position: relative;
+  z-index: 5;
+  padding-left: 4rem;
+}
+
+.show-one .show-two-info .main-subheading, .show-two .show-two-info .main-subheading, .show-three .show-two-info .main-subheading {
+  margin-bottom: 1.2rem !important;
+}
+
+.show-one .show-three-image, .show-two .show-three-image, .show-three .show-three-image {
+  background-image: url("../assets/dove.jpeg");
+  background-size: cover;
+  height: 100%;
+}
+
+.pricing-plan {
+  background-color: rgba(209, 210, 227, 0.4);
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  padding: 8rem 5rem;
 }
 
 /* footer */
