@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6, label {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
 }
-p, span, button, a, small {
+p, span, button, a, small, li {
     font-family: 'Lato', sans-serif;
 }
 a {
@@ -795,10 +795,46 @@ a {
         height:100%;        
     }
 }
-.pricing-plan {
-    background-color: rgba(209, 210, 227, 0.4); 
+#pricing {
+    background-color: rgba(209, 210, 227, 0.4) !important; 
     transform: skewY(5deg);
-    padding: 8rem 5rem; 
+    padding: 10rem 5rem 12rem 5rem; 
+    margin-top: 8rem;
+
+    .pricing-title{
+        transform: skewY(-5deg);
+        text-align: center; 
+        margin-bottom: 4.5rem; 
+    }
+}
+.pricing-plans {
+    transform: skewY(-5deg);
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5rem; 
+
+    .plan {
+        background-color: $lightbeige-background; 
+        box-shadow: 0 14px 28px rgba(209, 210, 227, 0.1), 0 10px 10px rgba(209, 210, 227, 0.1); 
+        text-align: center;
+        padding: 3rem;
+
+        .main-heading-small {
+            font-size: 2rem; 
+            letter-spacing: -0.1rem; 
+            margin-bottom: 1.5rem;
+        }
+
+        .list-style-none {
+            list-style-type: none;
+
+            li {
+                margin-bottom: 1.5rem; 
+                color: rgba(0,0,0, 0.7);
+                font-weight: 300; 
+            }
+        }
+    }
 }
 /* footer */ 
 footer {
