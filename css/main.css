@@ -1150,7 +1150,6 @@ footer {
     width: 100%;
     background-color: white;
     padding: 1.5rem;
-    margin-top: 2rem;
     position: absolute;
     left: 0;
     display: none;
@@ -1212,6 +1211,73 @@ footer {
         grid-template-columns: repeat(2, 1fr);
   }
   .footer-container .footer-contact {
+    margin: 0;
+    padding-top: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-heading {
+    font-size: 4rem;
+  }
+  .navbar {
+    padding: 1.4rem 3rem;
+  }
+  .promo {
+    padding: 0 3rem;
+  }
+  .promo h1 {
+    font-size: 5.5rem;
+  }
+  .promo p {
+    font-size: 2.5rem;
+  }
+  .promo .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .promo .main-button {
+    margin-bottom: 1rem;
+  }
+  .promo .secondary-button {
+    margin-left: 0;
+    text-align: center;
+  }
+  .about-section {
+    height: 70vh;
+  }
+  .about-section .about-background-one, .about-section .about-background-two {
+    display: none;
+  }
+  .about-section .about-content {
+    width: 100% !important;
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  .about-section .about-content .about-content-inner {
+    -webkit-transform: none !important;
+            transform: none !important;
+    padding: 0 3rem !important;
+  }
+  .shows-container-one {
+    padding: 5rem 3rem 1rem 3rem !important;
+  }
+  .shows-container-two, .shows-container-three, .shows-container-four {
+    padding: 0 3rem !important;
+  }
+  .featured-work-title {
+    padding: 8rem 3rem 5rem 3rem !important;
+  }
+  .featured-work {
+    padding: 0 3rem !important;
+  }
+  .footer-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .footer-container .footer-pages {
     margin: 0;
     padding-top: 4.5rem;
   }
