@@ -221,7 +221,7 @@ a {
     width: 100%;
     @include grid-layout; 
     grid-template-columns: repeat(2, 1fr);
-    padding: 2rem 5rem;
+    padding: 1.4rem 5rem;
     transition: 0.5s ease-in-out;
 }
 .logo-container {
@@ -898,5 +898,96 @@ footer {
         font-size: 1rem; 
         text-align: center; 
         font-weight: 300; 
+    }
+}
+/* media queries for tablet */
+@media screen and (min-width: 992px) {
+    .navbar-mobile {
+        display: none; 
+    }
+}
+@media screen and (max-width: 992px) {
+    .navbar-container {
+        display: none; 
+    }
+    .navbar-mobile {
+        text-align: right; 
+
+        .navbar-mobile-link {
+            color: white; 
+            font-size: 1.5rem; 
+        }
+
+        .navbar-mobile-contain {
+            width: 100%;
+            background-color: white;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            position: absolute;
+            left: 0;
+            display: none; 
+
+            .nav-link {
+                color: #02132a !important;
+            }
+        }
+
+        .navbar-mobile-links {
+            list-style-type: none;
+            line-height: 2.5rem;
+            text-align: center;
+        }
+    }
+    .about-content-inner {
+        padding: 0 0 0 5rem !important; 
+    }
+    .shows-section {
+        padding-bottom: 8rem !important;
+    }
+    .shows-container-one {
+        padding: 8rem 5rem 1rem 5rem !important;
+    }
+    .shows-container-two, .shows-container-three, .shows-container-four {
+        grid-template-columns: 1fr; 
+        height: 100%; 
+        .shows-content {
+            padding-left: 0; 
+            padding-right: 0; 
+        }
+    }
+    .shows-container-three {
+        .shows-content {
+            order: -1; 
+        }
+        .skew-two {
+            width: 10%; 
+        }
+    }
+
+    .featured-work-title {
+        grid-template-columns: 1fr; 
+    }
+
+    .featured-work {
+        grid-template-columns: 1fr; 
+        height: 100%; 
+
+        .featured-video-info-one {
+            padding: 0.5rem 0 4rem 0;
+            order: -1; 
+        }
+
+        .featured-video-info-two {
+            padding: 4rem 0 4rem 0;
+        }
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        .footer-contact {
+            margin: 0; 
+            padding-top: 4.5rem; 
+        }
     }
 }

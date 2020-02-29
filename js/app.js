@@ -1,13 +1,20 @@
-// change background and text color on scroll 
+//declare variables
 const navbar = document.querySelector('.navbar'); 
+const logo = document.querySelector('.logo');
 let navbarText = document.querySelectorAll('.nav-item .nav-link'); 
 let scrollPosition = 0; 
 
+const navbarMobileContain = document.querySelector('.navbar-mobile-contain');
+const navbarMobile = document.querySelector('.navbar-mobile'); 
+const navbarMobileLink = document.querySelector('.navbar-mobile-link'); 
+
+// change background and text color on scroll 
 window.addEventListener('scroll', () => {
     scrollPosition = window.scrollY; 
 
     if(scrollPosition === 0) {
         navbar.style.backgroundColor = 'transparent'; 
+        logo.setAttribute('src', '../assets/raman-illusions-logo.png');
 
         for(let i = 0; i < navbarText.length; i++) {
            navbarText[i].style.color = 'white';
@@ -16,10 +23,42 @@ window.addEventListener('scroll', () => {
 
     if (scrollPosition != 0) {
         navbar.style.backgroundColor = 'white'; 
+        logo.setAttribute('src', '../assets/raman-illusions-dark-logo.png');
 
         for(let i = 0; i < navbarText.length; i++) {
            navbarText[i].style.color = 'black';
         }       
     } 
-    
 });
+
+// navbar functionality in mobile 
+navbarMobile.addEventListener('click', (e) => {
+    
+    let navIcon = navbarMobileLink.children[0]; 
+
+    if(navIcon.getAttribute('class') == 'fas fa-bars') {
+        navIcon.setAttribute('class', 'fas fa-times'); 
+        navbarMobileContain.style.display = 'block'; 
+        if(screen.width <= 992) {
+            navbar.style.backgroundColor = 'white';
+            navbarMobileLink.style.color = '#02132a'; 
+        }     
+    } else {
+        navIcon.setAttribute('class', 'fas fa-bars');
+        navbarMobileContain.style.display = 'none';
+        navbar.style.backgroundColor = 'transparent';
+        navbarMobileLink.style.color = 'white'; 
+    }
+
+    e.preventDefault();
+}); 
+
+
+
+
+
+
+
+
+
+

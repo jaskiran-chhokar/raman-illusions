@@ -260,7 +260,7 @@ a {
           align-items: center;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  padding: 2rem 5rem;
+  padding: 1.4rem 5rem;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -1126,5 +1126,94 @@ footer {
   font-size: 1rem;
   text-align: center;
   font-weight: 300;
+}
+
+/* media queries for tablet */
+@media screen and (min-width: 992px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-container {
+    display: none;
+  }
+  .navbar-mobile {
+    text-align: right;
+  }
+  .navbar-mobile .navbar-mobile-link {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .navbar-mobile .navbar-mobile-contain {
+    width: 100%;
+    background-color: white;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    position: absolute;
+    left: 0;
+    display: none;
+  }
+  .navbar-mobile .navbar-mobile-contain .nav-link {
+    color: #02132a !important;
+  }
+  .navbar-mobile .navbar-mobile-links {
+    list-style-type: none;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+  .about-content-inner {
+    padding: 0 0 0 5rem !important;
+  }
+  .shows-section {
+    padding-bottom: 8rem !important;
+  }
+  .shows-container-one {
+    padding: 8rem 5rem 1rem 5rem !important;
+  }
+  .shows-container-two, .shows-container-three, .shows-container-four {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100%;
+  }
+  .shows-container-two .shows-content, .shows-container-three .shows-content, .shows-container-four .shows-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .shows-container-three .shows-content {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .shows-container-three .skew-two {
+    width: 10%;
+  }
+  .featured-work-title {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .featured-work {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100%;
+  }
+  .featured-work .featured-video-info-one {
+    padding: 0.5rem 0 4rem 0;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .featured-work .featured-video-info-two {
+    padding: 4rem 0 4rem 0;
+  }
+  .footer-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-container .footer-contact {
+    margin: 0;
+    padding-top: 4.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
