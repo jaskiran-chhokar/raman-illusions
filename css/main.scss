@@ -1160,12 +1160,12 @@ footer {
     }
 
     /* about page */ 
+    .page-heading {
+        font-size: 4rem; 
+    }
+
     .about-container {
         padding: 0 3rem; 
-
-        .page-heading {
-            font-size: 4rem; 
-        }
     }
 
     .about-info-container {
@@ -1188,6 +1188,29 @@ footer {
             background-position: center; 
         }
         
+    }
+    /* shows page */ 
+    .show-container {
+        padding: 0 2rem;
+    }
+    .show-one-title {
+        padding: 8rem 3rem 0 3rem; 
+
+        .main-heading {
+            font-size: 3rem; 
+            text-align: center; 
+        }
+    }
+    .show-one {
+        .main-subheading {
+            margin-bottom: 0; 
+        }
+    }
+    .show-two {
+        padding-top: 0 !important; 
+    }
+    #pricing {
+        padding: 10rem 3rem 12rem 3rem; 
     }
 
 }

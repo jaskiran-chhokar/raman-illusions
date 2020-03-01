@@ -1363,11 +1363,11 @@ footer {
     margin-left: 0;
   }
   /* about page */
+  .page-heading {
+    font-size: 4rem;
+  }
   .about-container {
     padding: 0 3rem;
-  }
-  .about-container .page-heading {
-    font-size: 4rem;
   }
   .about-info-container .about-info-three-image {
     height: 300px !important;
@@ -1379,6 +1379,26 @@ footer {
   .about-info-container-two .about-image-two, .about-info-container-two .about-image-four {
     height: 300px;
     background-position: center;
+  }
+  /* shows page */
+  .show-container {
+    padding: 0 2rem;
+  }
+  .show-one-title {
+    padding: 8rem 3rem 0 3rem;
+  }
+  .show-one-title .main-heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .show-one .main-subheading {
+    margin-bottom: 0;
+  }
+  .show-two {
+    padding-top: 0 !important;
+  }
+  #pricing {
+    padding: 10rem 3rem 12rem 3rem;
   }
 }
 
