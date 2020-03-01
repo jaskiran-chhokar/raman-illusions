@@ -924,6 +924,7 @@ footer {
             padding: 1.5rem;
             position: absolute;
             left: 0;
+            top:99%; 
             display: none; 
 
             .nav-link {
@@ -1069,7 +1070,7 @@ footer {
     }
 
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     .main-heading {
         font-size: 3.4rem; 
     }
@@ -1119,5 +1120,11 @@ footer {
     }
     footer {
         padding: 10rem 1.5rem 5rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .about-section {
+        height: 70vh; 
     }
 }
