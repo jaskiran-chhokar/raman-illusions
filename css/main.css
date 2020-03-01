@@ -1258,6 +1258,39 @@ footer {
   .about-info-three-image {
     width: 80%;
   }
+  /* shows page */
+  .show-one-title {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .show-one-title .main-heading {
+    font-size: 4rem;
+  }
+  .show-one, .show-two, .show-three {
+    padding: 4rem 3rem 0 3rem;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+  }
+  .show-one .main-subheading, .show-one .show-video-content {
+    padding: 0 !important;
+  }
+  .show-one .main-subheading .walk-around-video, .show-one .show-video-content .walk-around-video {
+    width: 100%;
+  }
+  .show-two-image, .show-three-image {
+    display: none;
+  }
+  .show-two-info {
+    padding-left: 0 !important;
+  }
+  #pricing .pricing-plans {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px) {
