@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
     if(scrollPosition === 0) {
         navbar.style.backgroundColor = 'transparent'; 
         navbarMobileLink.style.color = 'white';
-        logo.setAttribute('src', '../assets/raman-illusions-logo.png');
+        logo.setAttribute('src', 'https://jaskiran-chhokar.github.io/raman-illusions/assets/raman-illusions-logo.png');
 
         for(let i = 0; i < navbarText.length; i++) {
            navbarText[i].style.color = 'white';
@@ -26,7 +26,7 @@ window.addEventListener('scroll', () => {
     if (scrollPosition != 0) {
         navbar.style.backgroundColor = 'white'; 
         navbarMobileLink.style.color = '#02132a';
-        logo.setAttribute('src', '../assets/raman-illusions-dark-logo.png');
+        logo.setAttribute('src', 'https://jaskiran-chhokar.github.io/raman-illusions/assets/raman-illusions-dark-logo.png');
 
         for(let i = 0; i < navbarText.length; i++) {
            navbarText[i].style.color = '#02132a';
@@ -45,7 +45,7 @@ navbarMobile.addEventListener('click', (e) => {
         if(screen.width <= 992) {
             navbar.style.backgroundColor = 'white';
             navbarMobileLink.style.color = '#02132a'; 
-            logo.setAttribute('src', '../assets/raman-illusions-dark-logo.png');
+            logo.setAttribute('src', 'https://jaskiran-chhokar.github.io/raman-illusions/assets/raman-illusions-dark-logo.png');
         } 
     
     } else {
