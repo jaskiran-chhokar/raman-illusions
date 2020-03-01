@@ -1112,6 +1112,11 @@ footer {
     .shows-container-two, .shows-container-three, .shows-container-four {
         padding: 0 1.5rem !important; 
     }
+    .shows-container-three {
+        .skew-two {
+            width: 8.6%; 
+        }
+    }
     .featured-work-title {
         padding: 8rem 1.5rem 5rem 1.5rem !important;
     }
@@ -1126,5 +1131,73 @@ footer {
 @media screen and (min-width: 768px) and (min-height: 1024px) {
     .about-section {
         height: 70vh; 
+    }
+}
+
+@media screen and (max-width: 823px) and (max-height: 414px) and (orientation: landscape) {
+    .main-heading {
+        font-size: 3rem; 
+    }
+    .main-subheading {
+        font-size: 1.1rem; 
+    }
+    .main-heading-small {
+        font-size: 2.5rem; 
+    }
+    .promo {
+
+        h1 {
+            margin-top: 2rem; 
+            font-size: 4.2rem; 
+        }
+        p {
+            font-size: 1.4rem; 
+        }
+    }
+
+    .about-section {
+        .about-content {
+            height: 110%; 
+
+            .about-content-inner {
+                padding: 0 0 0 3rem !important; 
+
+                .about-content-subtitle {
+                    font-size: 0.95rem !important; 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 568px) and (max-height: 320px) and (orientation: landscape) {
+    .promo {
+        h1 {
+            font-size: 3rem;
+            letter-spacing: -0.2rem; 
+            margin-top: 4rem; 
+        }
+        p {
+            font-size: 1rem; 
+        }
+        .container {
+            grid-template-columns: repeat(2, 1fr); 
+
+            .main-button {
+                margin-bottom: 0; 
+            }
+            .secondary-button {
+                margin-left: 1rem; 
+            }
+        }
+    }
+    .about-section {
+
+        .about-content {
+
+            .about-content-inner {
+                padding-top: 2.5rem !important;
+            }
+        }
     }
 }
