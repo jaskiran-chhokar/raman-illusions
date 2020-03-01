@@ -990,7 +990,7 @@ footer {
         }
     }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 600px) {
     .main-heading {
         font-size: 4rem; 
     }
@@ -1002,6 +1002,7 @@ footer {
 
         h1 {
             font-size: 5.5rem; 
+            margin-top: 3rem; 
         }
         p {
             font-size: 2.5rem; 
@@ -1021,7 +1022,7 @@ footer {
 
     .about-section {
 
-        height: 70vh;
+        height: 80vh;
 
         .about-background-one, .about-background-two {
             display: none; 
@@ -1061,6 +1062,62 @@ footer {
             margin: 0;
             padding-top: 4.5rem; 
         }
+
+        .footer-contact-info span {
+            margin-left: 0; 
+        }
     }
 
+}
+@media screen and (max-width: 320px) {
+    .main-heading {
+        font-size: 3.4rem; 
+    }
+    .main-heading-small {
+        font-size: 3rem; 
+    }
+    .main-subheading {
+        font-size: 1.1rem; 
+    }
+    .navbar {
+        padding: 1.4rem 1.5rem; 
+    }
+    .promo {
+        padding: 0 1.5rem; 
+
+        h1 {
+            font-size: 4.5rem; 
+        }
+
+        p {
+            font-size: 1.5rem; 
+        }
+    }
+    .about-content {
+
+        margin-top: 5rem; 
+
+        .about-content-inner {
+            padding: 0 1.5rem; 
+
+            .about-content-subtitle {
+                font-size: 1.1rem; 
+            }
+        }
+    }
+    .shows-container-one {
+        padding: 8rem 3rem 1rem 3rem !important;
+    }
+    .shows-container-two, .shows-container-three, .shows-container-four {
+        padding: 0 1.5rem !important; 
+    }
+    .featured-work-title {
+        padding: 8rem 1.5rem 5rem 1.5rem !important;
+    }
+    .featured-work {
+        padding: 0 1.5rem !important; 
+    }
+    footer {
+        padding: 10rem 1.5rem 5rem 1.5rem;
+    }
 }
