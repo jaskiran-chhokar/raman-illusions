@@ -287,6 +287,37 @@ a {
   cursor: pointer;
 }
 
+.navbar-container .fancy-link {
+  position: relative;
+}
+
+.navbar-container .fancy-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -15%;
+  width: 100%;
+  height: 2px;
+  background-color: #fcf3e7;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.navbar-container .fancy-link:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar-container .fancy-link-scroll::after {
+  background-color: black;
+}
+
 .video-background {
   -o-object-fit: cover;
      object-fit: cover;

@@ -19,6 +19,7 @@ window.addEventListener('scroll', () => {
 
         for(let i = 0; i < navbarText.length; i++) {
            navbarText[i].style.color = 'white';
+           navbarText[i].classList.remove('fancy-link-scroll');
         }  
         
     }
@@ -30,6 +31,7 @@ window.addEventListener('scroll', () => {
 
         for(let i = 0; i < navbarText.length; i++) {
            navbarText[i].style.color = '#02132a';
+           navbarText[i].classList.add('fancy-link-scroll');
         }       
     } 
 });
