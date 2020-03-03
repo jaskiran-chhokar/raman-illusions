@@ -431,7 +431,17 @@ a {
     @include grid-layout; 
     grid-template-columns: repeat(2, 1fr);
     padding: 0 5rem; 
-    height: 70vh;    
+
+    .shows-content {
+        padding: 4rem 4rem 5rem 4rem; 
+    }
+
+    .show-video-content {
+
+        .walk-around-video {
+            width: 100%; 
+        }
+    }
 }
 /* featured work */ 
 .featured-work-section {

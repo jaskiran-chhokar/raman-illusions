@@ -550,7 +550,14 @@ a {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   padding: 0 5rem;
-  height: 70vh;
+}
+
+.shows-container-four .shows-content {
+  padding: 4rem 4rem 5rem 4rem;
+}
+
+.shows-container-four .show-video-content .walk-around-video {
+  width: 100%;
 }
 
 /* featured work */
