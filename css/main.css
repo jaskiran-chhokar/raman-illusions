@@ -558,6 +558,8 @@ a {
 
 .shows-container-four .show-video-content .walk-around-video {
   width: 100%;
+  position: relative;
+  z-index: 3;
 }
 
 /* featured work */
