@@ -9,9 +9,9 @@
   ### :art: Design 
   :heavy_check_mark: Create/design a consistent **style guide**
   
-  :heavy_check_mark: Formulate a **colour palette** to be used throught the site 
+  :heavy_check_mark: Formulate a **colour palette** to be used throughout the website.
   
-  :heavy_check_mark: Decide on the **font families/font weights** that will be used throughout the site 
+  :heavy_check_mark: Choose your **typography**, font must be legible to the user. 
   
   :heavy_check_mark: Ensure that the website design will be **accessible** to all users (e.g. users with colour blindness or any other visual impairement)
   
@@ -20,7 +20,7 @@
   ### :iphone: Client-Side Development
   :heavy_check_mark: Website must be **responsive** across all screen sizes 
   
-  :heavy_check_mark: Website must be fully **compatible** with the latest version of the following browswers: Chrome, Firefox, Safari and IE. 
+  :heavy_check_mark: Website must be fully **compatible** with the latest version of the following browsers: Chrome, Firefox, Safari and IE. 
   
   :heavy_check_mark: Implement **lazy-loading** with JavaScript to ensure that all off-screen images/videos are deferred (and only loads once the user scrolls to the position where the resource is located). 
   
@@ -30,10 +30,11 @@
   
   :heavy_check_mark: Write clean, readable and well-commented client-side code.
   
-  :heavy_check_mark: Ensure that the contact form is functional and points to the correct email address. 
+  :heavy_check_mark: Ensure that the **contact form is functional** and points to the correct email address. 
   
-  :heavy_check_mark: Make use of the Google Map API to create a map with multiple locations and pins. 
+  :heavy_check_mark: Make use of the Google Map API to create a **map with multiple locations and pins**. 
   
+  :heavy_check_mark: HTML markup must match **SEO specifications** provided to ensure that the website will be **search engine friendly**
   
 ## Built With 
 :heavy_check_mark: HTML5 
