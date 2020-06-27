@@ -49,6 +49,8 @@
 
 [Netlify](https://www.netlify.com/)
 
+[Google Maps API](https://developers.google.com/maps/documentation)
+
 [Pexels](https://www.pexels.com/)
 
 [Unsplash](https://unsplash.com/)
