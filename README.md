@@ -13,15 +13,26 @@
   
   :heavy_check_mark: Decide on the **font families/font weights** that will be used throughout the site 
   
-  :heavy_check_mark: Ensure that the website design will be **accessilble** to all users (e.g. users with colour blindness or any other visual impairement)
+  :heavy_check_mark: Ensure that the website design will be **accessible** to all users (e.g. users with colour blindness or any other visual impairement)
   
   :heavy_check_mark: Design 5 page layouts (Home, About, Shows, Work, Contact) for the following screen sizes: desktop, tablet and mobile. 
      
   ### :iphone: Client-Side Development
-  :heavy_check_mark: Website must be responsive across all screen sizes 
+  :heavy_check_mark: Website must be **responsive** across all screen sizes 
   
-  :heavy_check_mark: Website must be fully compatible with the latest version of the following browswers: Chrome, Firefox, Safari and IE. 
+  :heavy_check_mark: Website must be fully **compatible** with the latest version of the following browswers: Chrome, Firefox, Safari and IE. 
   
+  :heavy_check_mark: Implement **lazy-loading** with JavaScript to ensure that all off-screen images/videos are deferred (and only loads once the user scrolls to the position where the resource is located). 
+  
+  :heavy_check_mark: Properly size and **optimize images**.
+  
+  :heavy_check_mark: Ensure that the website is accessible to users that have any sort of visual or hearing impairements. Website should be **screen reader friendly, make efficient use of aria-labels, image descriptions, etc.** 
+  
+  :heavy_check_mark: Write clean, readable and well-commented client-side code.
+  
+  :heavy_check_mark: Ensure that the contact form is functional and points to the correct email address. 
+  
+  :heavy_check_mark: Make use of the Google Map API to create a map with multiple locations and pins. 
   
   
 ## Built With 
