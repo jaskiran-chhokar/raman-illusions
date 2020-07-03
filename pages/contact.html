@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Us - Raman Illusions</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Nunito+Sans:300,400,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"
+        rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
 </head>
+
 <body>
-   <!-- navbar -->
-   <nav class="navbar-section">
+    <!-- navbar -->
+    <nav class="navbar-section">
         <div class="navbar">
             <div class="logo-container">
-                    <img class="logo" src="https://jaskiran-chhokar.github.io/raman-illusions/assets/raman-illusions-logo.png" width="40" alt="Raman Sharma Magic Logo">
+                <img class="logo"
+                    src="https://jaskiran-chhokar.github.io/raman-illusions/assets/raman-illusions-logo.png" width="40"
+                    alt="Raman Sharma Magic Logo">
             </div>
             <ul class="navbar-container">
                 <li class="nav-item">
                     <a class="nav-link fancy-link" href="../index">Home</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link fancy-link" href="about">About</a>
+                    <a class="nav-link fancy-link" href="about">About</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link fancy-link" href="shows">Shows</a>
-                </li>        
+                    <a class="nav-link fancy-link" href="shows">Shows</a>
+                </li>
                 <li class="nav-item">
-                        <a class="nav-link fancy-link" href="work">Work</a>
-                </li>            
+                    <a class="nav-link fancy-link" href="work">Work</a>
+                </li>
                 <li class="nav-item">
-                        <a class="nav-link fancy-link" href="contact">Contact</a>
-                </li>                                   
+                    <a class="nav-link fancy-link" href="contact">Contact</a>
+                </li>
             </ul>
             <div class="navbar-mobile">
                 <a class="navbar-mobile-link" href="">
@@ -44,28 +50,28 @@
                             <a class="nav-link" href="../index">Home</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="about">About</a>
+                            <a class="nav-link" href="about">About</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="shows">Shows</a>
-                        </li>        
+                            <a class="nav-link" href="shows">Shows</a>
+                        </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="work">Work</a>
-                        </li>            
+                            <a class="nav-link" href="work">Work</a>
+                        </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="contact">Contact</a>
-                        </li>   
+                            <a class="nav-link" href="contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </nav> 
+    </nav>
     <!-- contact header -->
     <section class="contact-header">
         <div class="contact-container">
             <div>
                 <h1 class="page-heading">Contact Us</h1>
-                <p class="main-subheading-light">Feel free to contact us today!</p>   
+                <p class="main-subheading-light">Feel free to contact us today!</p>
                 <a class="main-button" href="about">Learn More<i class="fas fa-angle-right"></i></a>
             </div>
         </div>
@@ -73,25 +79,25 @@
     <!-- contact form -->
     <section class="contact-form">
         <div class="contact-info">
-            <form>
+            <form name="contact" method="POST" data-netlify="true">
                 <div class="container">
                     <div class="form-contain-one">
-                        <label class="form-label">First Name:</label>
-                        <input class="first-name" type="text">
+                        <label for="first-name" class="form-label">First Name:</label>
+                        <input id="first-name" class="first-name" type="text">
                     </div>
                     <div class="form-contain-two">
-                        <label class="form-label">Last Name:</label>
-                        <input class="last-name" type="text">
+                        <label for="last-name" class="form-label">Last Name:</label>
+                        <input id="last-name" class="last-name" type="text">
                     </div>
                 </div>
                 <div class="container">
                     <div class="form-contain-one">
-                        <label class="form-label">Email Address: </label>
-                        <input class="email-address" type="email">
+                        <label for="email-address" class="form-label">Email Address: </label>
+                        <input id="email-address" class="email-address" type="email">
                     </div>
                     <div class="form-contain-two">
-                        <label class="form-label">Phone Number:</label>
-                        <input class="phone-number" type="number" >
+                        <label for="phone-number" class="form-label">Phone Number:</label>
+                        <input id="phone-number" class="phone-number" type="number">
                     </div>
                 </div>
                 <label class="form-label">Message: </label>
@@ -102,23 +108,26 @@
         <div class="contact-image"></div>
     </section>
     <section class="contact-map">
-            <h2 class="main-heading">My Travels . . .</h2>
-            <div class="contact-map-contain">
-                    <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1x5-FWpWpZnC5Mr5ml2ROH7cv-ysj8hni" width="640" height="480"></iframe>
-                    <div class="map-overlay"></div>
-            </div>
+        <h2 class="main-heading">My Travels . . .</h2>
+        <div class="contact-map-contain">
+            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1x5-FWpWpZnC5Mr5ml2ROH7cv-ysj8hni"
+                width="640" height="480"></iframe>
+            <div class="map-overlay"></div>
+        </div>
     </section>
     <!-- footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-about">
                 <h3 class="footer-title">Raman Illusions</h3>
-                <p class="footer-about-subtitle">Raman Sharma is an International illusionist who has performed around the globe. His unique and creative style of magic has allowed him to entertain some of the biggest multinational companies in the world.</p>
+                <p class="footer-about-subtitle">Raman Sharma is an International illusionist who has performed around
+                    the globe. His unique and creative style of magic has allowed him to entertain some of the biggest
+                    multinational companies in the world.</p>
                 <div class="footer-social-media">
-                        <i class="footer-social-media-icon fab fa-facebook-f"></i>
-                        <i class="footer-social-media-icon fab fa-instagram"></i>
-                        <i class="footer-social-media-icon fab fa-twitter"></i>
-                        <i class="footer-social-media-icon fab fa-youtube"></i>
+                    <i class="footer-social-media-icon fab fa-facebook-f"></i>
+                    <i class="footer-social-media-icon fab fa-instagram"></i>
+                    <i class="footer-social-media-icon fab fa-twitter"></i>
+                    <i class="footer-social-media-icon fab fa-youtube"></i>
                 </div>
             </div>
             <div class="footer-pages">
@@ -133,7 +142,7 @@
             </div>
             <div class="footer-contact">
                 <h3 class="footer-title">Contact</h3>
-                <p class="footer-contact-info">Email Address:  <span>info@ramanillusions.com</span></p>
+                <p class="footer-contact-info">Email Address: <span>info@ramanillusions.com</span></p>
                 <p class="footer-contact-info">Phone Number: <span>+905 - 962 - 1515</span></p>
             </div>
         </div>
@@ -146,4 +155,5 @@
     </footer>
     <script src="../js/app.js"></script>
 </body>
+
 </html>
